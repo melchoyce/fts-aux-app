@@ -1,0 +1,420 @@
+/**
+ * AUX Application
+ * by Mel Choyce 
+ * melissachoyce@gmail.com
+ * @melchoyce
+ *
+ * This project is built on http://www.initializr.com/
+ *
+ * Thank you for considering me!
+ *
+ */
+
+
+/* CSS Reset
+******************************************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Global Elements
+******************************************************/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "ff-tisa-web-pro", serif;
+  	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5em;
+	color: #333;
+}
+
+a {
+	color: #11bbd4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 70px;
+	font-size: 7rem;
+	line-height: 100px;
+	line-height: 10rem;
+}
+
+h2 {
+	margin-top: 1em;
+	font-size: 50px;
+	font-size: 5rem;
+	font-weight: semibold;
+}
+
+h3 {
+	clear: both;
+	padding-top: 1em;
+	font-size: 36px;
+	font-size: 3.6rem;
+	font-weight: semibold;
+	text-transform: uppercase;	
+}
+
+h4 {
+	margin-top: 2em;
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+#work p,
+#portfolio p,
+footer p,
+ol {
+	font-family: "myriad-pro", sans-serif;
+}
+
+#work p,
+#portfolio p,
+ol {
+	font-weight: 300;
+}
+
+p {
+	margin: 1em 0;
+}
+
+p, 
+ul {
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.6em;
+}
+
+ol {
+	list-style-type: disc;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Structure & Layout
+******************************************************/
+
+body {
+	border-top: 5px solid #11bbd4;
+	border-bottom: 5px solid #11bbd4;
+}
+
+header {
+	padding: 3em 0;
+	width: 100%;
+}
+
+#headercontainer,
+#container {
+	margin: auto;
+	max-width: 1000px;
+	padding: 0 2em 0 15%;
+}
+
+article section {
+	max-width: 830px;
+}
+
+
+/* Header
+******************************************************/
+
+header {
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+}
+
+header strong {
+	padding: 0 10px 5px;
+	background-color: #11bbd4;
+	font-weight: 300;
+	color: white;
+}
+
+header h1 {
+	width: 51%;
+}
+
+header h1.linetwo {
+	margin-top: .5em;
+	font-weight: 300;
+}
+
+footer {
+	margin: 4em 0;
+	background-color: #eee;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;	
+}
+
+
+/* Introduction
+******************************************************/
+
+#introduction {
+	margin: 3em 0;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #DFDFDF;	
+}
+
+#introduction ul li {
+	margin: .5em 0;
+	padding-left: 1.75em;
+}
+
+#design {
+	background: url('../img/design.png') no-repeat left center;
+}
+
+#wp {
+	background: url('../img/wordpress.png') no-repeat left center;
+}
+
+#beer {
+	background: url('../img/beer.png') no-repeat left center;
+}
+
+
+/* Work
+******************************************************/
+
+#work {
+	position:relative;
+	max-width: 1000px !important;
+}
+
+#slides {
+	margin-left: -124px;
+}
+
+.slide {
+	margin-top: 3em;
+}
+
+.sliderimages {
+	width: 1000px;
+}
+
+.sliderimages div {
+	float: left;
+}
+
+.slide-left {
+	margin-right: 20px;
+}
+
+.slide-righttop {
+	height: 307px;
+	margin-bottom: 20px;
+}
+
+.slidedescription {
+	margin: 0 85px 4em 124px;
+	max-width: 830px
+}
+
+.flex-control-nav {
+	bottom: auto;
+	top: 10px;
+	right: 124px;
+	width: auto;
+}
+
+.flex-control-paging li a {
+	width: 15px;
+	height: 15px;
+	background: #ccc;
+	box-shadow: none;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+	border-radius: 25px;	
+}
+
+.flex-control-paging li a.flex-active {
+	background: #11bbd4;
+}
+
+flex-control-paging li a:hover {
+	background: #333;
+}
+
+.flex-direction-nav {
+	margin: 0 auto 0 124px;
+	max-width: 830px;
+}
+
+.flex-direction-nav a {
+	display: inline;
+	position: relative;
+	top: 0;
+	z-index: 10;
+	margin: 0;
+	height: auto;
+	width: auto;
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-indent: 0px;
+	cursor: pointer;
+	background: none;
+	opacity: 1;
+}
+
+.flex-direction-nav .flex-prev {
+	float: left;
+	left: 0;
+}
+
+.flex-direction-nav .flex-next {
+	float: right;
+	right: 0;
+}
+
+#portfolio {
+	margin: 2em 0 4em;
+	padding: 1em 0;
+	max-width:830px;
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+#portfolio p {
+	margin: 0;
+	font-size: 20px;
+	font-size: 2rem;
+	font-style: italic;
+	text-align: center;
+	color: #999;
+}
+
+
+/* Footer
+******************************************************/
+
+footer p {
+	margin: 0;
+	padding: 3em;
+	text-align: center;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+footer p span {
+	color: #ccc;
+	padding: 0 1em;
+}
+
+
+/* Media Queries
+******************************************************/
+
+
+@media screen 
+and (max-width: 1060px) {
+
+	.flex-control-nav {
+		right: 0;
+	}
+
+}
+
+@media screen 
+and (max-width: 900px) {
+
+	header h1 {
+		width: 80%;
+	}
+	
+	#headercontainer,
+	#container {
+		padding: 0 3em;	
+	}
+
+}
+
+@media screen 
+and (max-width: 650px) {
+
+	#slides {
+		margin-left: 0px;
+	}
+
+	.slidedescription {
+		margin: 0 85px 4em 0;
+	}	
+
+	footer p span {
+		padding: 0 .25em;
+	}
+
+}

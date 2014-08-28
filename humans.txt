@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# Site designed & developed by Mel Choyce (@melchoyce) for the AUX Program
+# Special thanks given to Kelly Dwan (redradar.net) for helping me integrate FlexSlider
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr, FlexSlider
